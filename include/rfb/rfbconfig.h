@@ -511,7 +511,7 @@
 
 /* Define to the full name and version of this package. */
 #ifndef LIBVNCSERVER_PACKAGE_STRING 
-#define LIBVNCSERVER_PACKAGE_STRING  "x11vnc 0.9.9" 
+#define LIBVNCSERVER_PACKAGE_STRING  "x11vnc 0.9.12" 
 #endif
 
 /* Define to the one symbol short name of this package. */
@@ -521,7 +521,7 @@
 
 /* Define to the version of this package. */
 #ifndef LIBVNCSERVER_PACKAGE_VERSION 
-#define LIBVNCSERVER_PACKAGE_VERSION  "0.9.9" 
+#define LIBVNCSERVER_PACKAGE_VERSION  "0.9.12" 
 #endif
 
 /* The number of bytes in type char */
@@ -551,8 +551,11 @@
 
 /* Version number of package */
 #ifndef LIBVNCSERVER_VERSION 
-#define LIBVNCSERVER_VERSION  "0.9.9" 
+#define LIBVNCSERVER_VERSION  "0.9.12" 
 #endif
+
+/* Enable support for gnutls in libvncclient */
+/* #undef LIBVNCSERVER_WITH_CLIENT_TLS */
 
 /* Disable TightVNCFileTransfer protocol */
 #ifndef LIBVNCSERVER_WITH_TIGHTVNC_FILETRANSFER 

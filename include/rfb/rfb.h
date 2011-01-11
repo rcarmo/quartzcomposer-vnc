@@ -37,7 +37,7 @@ extern "C"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "rfbproto.h"
+#include <rfb/rfbproto.h>
 
 #ifdef LIBVNCSERVER_HAVE_SYS_TYPES_H
 #include <sys/types.h>

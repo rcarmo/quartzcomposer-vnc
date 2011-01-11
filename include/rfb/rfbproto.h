@@ -56,8 +56,8 @@
 #undef SOCKET
 #define SOCKET int
 #else
-#include "rfbconfig.h"
-#include "rfbint.h"
+#include <rfb/rfbconfig.h>
+#include <rfb/rfbint.h>
 #endif
 
 #ifdef LIBVNCSERVER_HAVE_LIBZ
