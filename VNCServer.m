@@ -78,8 +78,11 @@
     
     // DRY man!
     screenInfo->deferUpdateTime = 0;
+	screenInfo->autoPort = 0;
+	screenInfo->port = 5901; // TODO: fix this when we re-do the property list
     screenInfo->cursor = NULL;
-    
+	screenInfo->alwaysShared = 1;
+	screenInfo->passwordCheck = 0;
     rfbInitServer(screenInfo);
   }
   return self;
@@ -90,6 +93,10 @@
     [self createScreenWithWidth: width height: height bitsPerSample: bitsPerSample samplesPerPixel: samplesPerPixel bytesPerPixel: bytesPerPixel];
     screenInfo->deferUpdateTime = 0;
     screenInfo->cursor = NULL;
+	screenInfo->autoPort = 0;
+	screenInfo->port = 5901; // TODO: fix this when we re-do the property list
+	screenInfo->alwaysShared = 1;
+	screenInfo->passwordCheck = 0;
     rfbInitServer(screenInfo);
   }
   return self;

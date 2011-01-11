@@ -25,18 +25,15 @@
 /* #undef LIBVNCSERVER_HAVE_AVAHI */
 
 /* Define to 1 if you have the `crypt' function. */
-/* #undef LIBVNCSERVER_HAVE_CRYPT */
-
-/* Define to 1 if you have the <dlfcn.h> header file. */
-/* #undef LIBVNCSERVER_HAVE_DLFCN_H */
+#ifndef LIBVNCSERVER_HAVE_CRYPT 
+#define LIBVNCSERVER_HAVE_CRYPT  1 
+#endif
 
 /* Define to 1 if you don't have `vprintf' but do have `_doprnt.' */
 /* #undef LIBVNCSERVER_HAVE_DOPRNT */
 
 /* DPMS extension build environment present */
-#ifndef LIBVNCSERVER_HAVE_DPMS 
-#define LIBVNCSERVER_HAVE_DPMS  1 
-#endif
+/* #undef LIBVNCSERVER_HAVE_DPMS */
 
 /* FBPM extension build environment present */
 /* #undef LIBVNCSERVER_HAVE_FBPM */
@@ -82,9 +79,7 @@
 #endif
 
 /* Define to 1 if you have the `getspnam' function. */
-#ifndef LIBVNCSERVER_HAVE_GETSPNAM 
-#define LIBVNCSERVER_HAVE_GETSPNAM  1 
-#endif
+/* #undef LIBVNCSERVER_HAVE_GETSPNAM */
 
 /* Define to 1 if you have the `gettimeofday' function. */
 #ifndef LIBVNCSERVER_HAVE_GETTIMEOFDAY 
@@ -120,9 +115,7 @@
 /* #undef LIBVNCSERVER_HAVE_IRIX_XREADDISPLAY */
 
 /* libcrypt library present */
-#ifndef LIBVNCSERVER_HAVE_LIBCRYPT 
-#define LIBVNCSERVER_HAVE_LIBCRYPT  1 
-#endif
+/* #undef LIBVNCSERVER_HAVE_LIBCRYPT */
 
 /* openssl libcrypto library present */
 #ifndef LIBVNCSERVER_HAVE_LIBCRYPTO 
@@ -138,9 +131,7 @@
 #endif
 
 /* Define to 1 if you have the `nsl' library (-lnsl). */
-#ifndef LIBVNCSERVER_HAVE_LIBNSL 
-#define LIBVNCSERVER_HAVE_LIBNSL  1 
-#endif
+/* #undef LIBVNCSERVER_HAVE_LIBNSL */
 
 /* Define to 1 if you have the `pthread' library (-lpthread). */
 #ifndef LIBVNCSERVER_HAVE_LIBPTHREAD 
@@ -162,14 +153,10 @@
 /* #undef LIBVNCSERVER_HAVE_LIBXFIXES */
 
 /* XINERAMA extension build environment present */
-#ifndef LIBVNCSERVER_HAVE_LIBXINERAMA 
-#define LIBVNCSERVER_HAVE_LIBXINERAMA  1 
-#endif
+/* #undef LIBVNCSERVER_HAVE_LIBXINERAMA */
 
 /* XRANDR extension build environment present */
-#ifndef LIBVNCSERVER_HAVE_LIBXRANDR 
-#define LIBVNCSERVER_HAVE_LIBXRANDR  1 
-#endif
+/* #undef LIBVNCSERVER_HAVE_LIBXRANDR */
 
 /* DEC-XTRAP extension build environment present */
 /* #undef LIBVNCSERVER_HAVE_LIBXTRAP */
@@ -180,24 +167,16 @@
 #endif
 
 /* linux fb device build environment present */
-#ifndef LIBVNCSERVER_HAVE_LINUX_FB_H 
-#define LIBVNCSERVER_HAVE_LINUX_FB_H  1 
-#endif
+/* #undef LIBVNCSERVER_HAVE_LINUX_FB_H */
 
 /* linux/input.h present */
-#ifndef LIBVNCSERVER_HAVE_LINUX_INPUT_H 
-#define LIBVNCSERVER_HAVE_LINUX_INPUT_H  1 
-#endif
+/* #undef LIBVNCSERVER_HAVE_LINUX_INPUT_H */
 
 /* linux uinput device build environment present */
-#ifndef LIBVNCSERVER_HAVE_LINUX_UINPUT_H 
-#define LIBVNCSERVER_HAVE_LINUX_UINPUT_H  1 
-#endif
+/* #undef LIBVNCSERVER_HAVE_LINUX_UINPUT_H */
 
 /* video4linux build environment present */
-#ifndef LIBVNCSERVER_HAVE_LINUX_VIDEODEV_H 
-#define LIBVNCSERVER_HAVE_LINUX_VIDEODEV_H  1 
-#endif
+/* #undef LIBVNCSERVER_HAVE_LINUX_VIDEODEV_H */
 
 /* build MacOS X native display support */
 #ifndef LIBVNCSERVER_HAVE_MACOSX_NATIVE_DISPLAY 
@@ -245,9 +224,7 @@
 #endif
 
 /* RECORD extension build environment present */
-#ifndef LIBVNCSERVER_HAVE_RECORD 
-#define LIBVNCSERVER_HAVE_RECORD  1 
-#endif
+/* #undef LIBVNCSERVER_HAVE_RECORD */
 
 /* Define to 1 if you have the `select' function. */
 #ifndef LIBVNCSERVER_HAVE_SELECT 
@@ -380,9 +357,7 @@
 #endif
 
 /* Define to 1 if you have the <sys/stropts.h> header file. */
-#ifndef LIBVNCSERVER_HAVE_SYS_STROPTS_H 
-#define LIBVNCSERVER_HAVE_SYS_STROPTS_H  1 
-#endif
+/* #undef LIBVNCSERVER_HAVE_SYS_STROPTS_H */
 
 /* Define to 1 if you have the <sys/timeb.h> header file. */
 #ifndef LIBVNCSERVER_HAVE_SYS_TIMEB_H 
@@ -410,9 +385,7 @@
 #endif
 
 /* Define to 1 if compiler supports __thread */
-#ifndef LIBVNCSERVER_HAVE_TLS 
-#define LIBVNCSERVER_HAVE_TLS  1 
-#endif
+/* #undef LIBVNCSERVER_HAVE_TLS */
 
 /* Define to 1 if you have the <unistd.h> header file. */
 #ifndef LIBVNCSERVER_HAVE_UNISTD_H 
@@ -453,9 +426,7 @@
 #endif
 
 /* X11 build environment present */
-#ifndef LIBVNCSERVER_HAVE_X11 
-#define LIBVNCSERVER_HAVE_X11  1 
-#endif
+/* #undef LIBVNCSERVER_HAVE_X11 */
 
 /* open ssl X509_print_ex_fp available */
 #ifndef LIBVNCSERVER_HAVE_X509_PRINT_EX_FP 
@@ -463,30 +434,20 @@
 #endif
 
 /* XKEYBOARD extension build environment present */
-#ifndef LIBVNCSERVER_HAVE_XKEYBOARD 
-#define LIBVNCSERVER_HAVE_XKEYBOARD  1 
-#endif
+/* #undef LIBVNCSERVER_HAVE_XKEYBOARD */
 
 /* MIT-SHM extension build environment present */
-#ifndef LIBVNCSERVER_HAVE_XSHM 
-#define LIBVNCSERVER_HAVE_XSHM  1 
-#endif
+/* #undef LIBVNCSERVER_HAVE_XSHM */
 
 /* XTEST extension build environment present */
-#ifndef LIBVNCSERVER_HAVE_XTEST 
-#define LIBVNCSERVER_HAVE_XTEST  1 
-#endif
+/* #undef LIBVNCSERVER_HAVE_XTEST */
 
 /* XTEST extension has XTestGrabControl */
-#ifndef LIBVNCSERVER_HAVE_XTESTGRABCONTROL 
-#define LIBVNCSERVER_HAVE_XTESTGRABCONTROL  1 
-#endif
+/* #undef LIBVNCSERVER_HAVE_XTESTGRABCONTROL */
 
 /* Define to 1 if `lstat' dereferences a symlink specified with a trailing
    slash. */
-#ifndef LIBVNCSERVER_LSTAT_FOLLOWS_SLASHED_SYMLINK 
-#define LIBVNCSERVER_LSTAT_FOLLOWS_SLASHED_SYMLINK  1 
-#endif
+/* #undef LIBVNCSERVER_LSTAT_FOLLOWS_SLASHED_SYMLINK */
 
 /* Need a typedef for in_addr_t */
 /* #undef LIBVNCSERVER_NEED_INADDR_T */
@@ -567,7 +528,9 @@
 /* #undef LIBVNCSERVER_WORDS_BIGENDIAN */
 
 /* Define to 1 if the X Window System is missing or not being used. */
-/* #undef LIBVNCSERVER_X_DISPLAY_MISSING */
+#ifndef LIBVNCSERVER_X_DISPLAY_MISSING 
+#define LIBVNCSERVER_X_DISPLAY_MISSING  1 
+#endif
 
 /* Define to empty if `const' does not conform to ANSI C. */
 /* #undef const */
