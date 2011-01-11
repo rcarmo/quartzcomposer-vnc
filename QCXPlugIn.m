@@ -65,7 +65,7 @@ NSMutableDictionary *QCXPlugIn_plugInInfos;
 }
 
 + (NSDictionary *) attributesForPropertyPortWithKey:(NSString *) key {
-  return [[[self plugInInfo] objectForKey: @"attributes"] objectForKey: key];
+   return [[[self plugInInfo] objectForKey: @"attributes"] objectForKey: key];
 }
 
 + (NSString *) pixelFormatWithColorSpace: (CGColorSpaceRef) colorSpace {

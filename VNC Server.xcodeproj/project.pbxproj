@@ -22,14 +22,14 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		0506227612DC78EC00C8DDC8 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0506227512DC78EC00C8DDC8 /* libjpeg.a */; };
+		0506227812DC790300C8DDC8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0506227712DC790300C8DDC8 /* libz.dylib */; };
 		16BA95420A7EB2EB001E4983 /* VNCServerPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BA95410A7EB2EB001E4983 /* VNCServerPlugIn.m */; };
 		16BA96310A7EB9AC001E4983 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16BA96300A7EB9AC001E4983 /* Quartz.framework */; };
 		7238D5520DB6988600E9A42D /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7238D5500DB6988600E9A42D /* Settings.xib */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 		EB2A15801128A6A700353B43 /* VNCServer.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2A157F1128A6A700353B43 /* VNCServer.m */; };
 		EB4F6EA711B7075600FE4528 /* libvncserver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8B41EF117B65A5004C4432 /* libvncserver.a */; };
-		EB4F6EAC11B7077300FE4528 /* libvncserver-libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8B41F0117B65A5004C4432 /* libvncserver-libz.a */; };
-		EB4F6EAF11B7077800FE4528 /* libvncserver-libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB8B41EE117B65A5004C4432 /* libvncserver-libjpeg.a */; };
 		EBD66FDE112CD4BE00335393 /* VNCServerPlugIn.xml in Resources */ = {isa = PBXBuildFile; fileRef = EBD66FDD112CD4BE00335393 /* VNCServerPlugIn.xml */; };
 		EBD66FFE112CDD8300335393 /* QCXPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD66FEB112CD5E700335393 /* QCXPlugIn.m */; };
 /* End PBXBuildFile section */
@@ -58,6 +58,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0506227512DC78EC00C8DDC8 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = lib/libjpeg.a; sourceTree = "<group>"; };
+		0506227712DC790300C8DDC8 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = /usr/lib/libz.dylib; sourceTree = "<absolute>"; };
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		16AA5C440A7EEE7300888E31 /* VNC Server_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "VNC Server_Prefix.pch"; sourceTree = "<group>"; };
 		16BA95400A7EB2EB001E4983 /* VNCServerPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = VNCServerPlugIn.h; sourceTree = "<group>"; };
@@ -69,9 +71,7 @@
 		EB2A157E1128A6A700353B43 /* VNCServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VNCServer.h; sourceTree = "<group>"; };
 		EB2A157F1128A6A700353B43 /* VNCServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VNCServer.m; sourceTree = "<group>"; };
 		EB2A158B1128A8DF00353B43 /* VNCServer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VNCServer-Info.plist"; sourceTree = "<group>"; };
-		EB8B41EE117B65A5004C4432 /* libvncserver-libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libvncserver-libjpeg.a"; path = "lib/libvncserver-libjpeg.a"; sourceTree = "<group>"; };
 		EB8B41EF117B65A5004C4432 /* libvncserver.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libvncserver.a; path = lib/libvncserver.a; sourceTree = "<group>"; };
-		EB8B41F0117B65A5004C4432 /* libvncserver-libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libvncserver-libz.a"; path = "lib/libvncserver-libz.a"; sourceTree = "<group>"; };
 		EB8B4219117B66EF004C4432 /* VNC Server.qtz */ = {isa = PBXFileReference; lastKnownFileType = "video.quartz-composer"; name = "VNC Server.qtz"; path = "Compositions/VNC Server.qtz"; sourceTree = "<group>"; };
 		EBD66FDD112CD4BE00335393 /* VNCServerPlugIn.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = VNCServerPlugIn.xml; sourceTree = "<group>"; };
 		EBD66FEA112CD58500335393 /* QCXPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCXPlugIn.h; sourceTree = "<group>"; };
@@ -83,11 +83,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB4F6EAF11B7077800FE4528 /* libvncserver-libjpeg.a in Frameworks */,
-				EB4F6EAC11B7077300FE4528 /* libvncserver-libz.a in Frameworks */,
 				EB4F6EA711B7075600FE4528 /* libvncserver.a in Frameworks */,
 				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
 				16BA96310A7EB9AC001E4983 /* Quartz.framework in Frameworks */,
+				0506227612DC78EC00C8DDC8 /* libjpeg.a in Frameworks */,
+				0506227812DC790300C8DDC8 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,9 +111,9 @@
 		089C1671FE841209C02AAC07 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EB8B41EE117B65A5004C4432 /* libvncserver-libjpeg.a */,
+				0506227712DC790300C8DDC8 /* libz.dylib */,
 				EB8B41EF117B65A5004C4432 /* libvncserver.a */,
-				EB8B41F0117B65A5004C4432 /* libvncserver-libz.a */,
+				0506227512DC78EC00C8DDC8 /* libjpeg.a */,
 				16BA96300A7EB9AC001E4983 /* Quartz.framework */,
 				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
 			);
@@ -333,6 +333,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/include\"";
 				SDKROOT = macosx10.6;
+				VALID_ARCHS = x86_64;
 			};
 			name = Release;
 		};
